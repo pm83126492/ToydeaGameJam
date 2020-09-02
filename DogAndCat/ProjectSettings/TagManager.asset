@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ball
+  - BeginBall
+  - Dog
+  - Cat
+  - Car
+  - CarStop
   layers:
   - Default
   - TransparentFX
@@ -14,7 +20,7 @@ TagManager:
   - 
   - 
   - Wall
-  - 
+  - Player
   - 
   - 
   - 

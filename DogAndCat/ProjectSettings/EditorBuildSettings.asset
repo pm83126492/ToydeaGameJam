@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Start_Scene.unity
+    guid: 307bc390bf784104596c9c58aa2c07a7
+  - enabled: 1
+    path: Assets/Scenes/Rule_Scene.unity
+    guid: 2577cf9480a5a1447bec555286ab4aa1
+  - enabled: 1
     path: Assets/Scenes/DogAndCat.unity
     guid: a3319682a8d048245975406bfe8288ad
   m_configObjects: {}
