@@ -25,6 +25,7 @@ public class Ball : MonoBehaviour
     private void Update()
     {
         transform.Translate(Vector3.forward * Time.deltaTime * Speed);
+        transform.Rotate(Vector3.forward * 5);
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 

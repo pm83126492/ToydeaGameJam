@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6668978354125621181}
   - component: {fileID: 6668978354125621180}
   - component: {fileID: 6668978354125621183}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: BeginBall
   m_TagString: BeginBall
   m_Icon: {fileID: 0}
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6668978354125621185}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2618532, y: 0.35000002, z: -6.2}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: 3.483352, y: 1.4017025, z: 2.2175775}
+  m_LocalScale: {x: 187.88933, y: 187.88933, z: 187.88933}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -40,7 +40,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6668978354125621185}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 2540817853737639666, guid: d7bd8dfcfef791e4c8dea600b44d85b6, type: 3}
 --- !u!23 &6668978354125621180
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 77bc3551d355ed0439d3a41fae538001, type: 2}
+  - {fileID: 2100000, guid: b9f9e5c51e21e6244b0644e225445c66, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91,5 +91,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.0063576456
+  m_Center: {x: 0.0000000011641533, y: 0, z: -0.0000000018626454}
