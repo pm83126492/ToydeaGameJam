@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class backbutton : MonoBehaviour, IPointerClickHandler
+public class backbutton : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
+    AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -22,5 +23,15 @@ public class backbutton : MonoBehaviour, IPointerClickHandler
         // OnClick code goes here ...
         Debug.Log("---------");
         SceneManager.LoadScene("Start_Scene");
+    }
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        audio.Play();
+        transform.position += new Vector3(0, 30, 0);
+    }
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        transform.position -= new Vector3(0, 30, 0);
+        Debug.Log("Mouse Exit");
     }
 }

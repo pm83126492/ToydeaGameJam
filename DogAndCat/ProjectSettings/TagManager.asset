@@ -10,6 +10,7 @@ TagManager:
   - Cat
   - Car
   - CarStop
+  - Pot
   layers:
   - Default
   - TransparentFX
@@ -21,9 +22,9 @@ TagManager:
   - 
   - Wall
   - Player
-  - 
-  - 
-  - 
+  - Pot
+  - Rebound
+  - Ball
   - 
   - 
   - 

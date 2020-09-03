@@ -1,26 +1,49 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BackToTitleButton
     - Ball
+    - Car
+    - ContinueButton
     - EZCameraShake.CameraShaker
+    - ExitButton
     - FishEyeEffect
+    - GameManager
+    - InstantiateCanvasOnClick
+    - PauseOnCanvas
+    - Reload
     - Shake
     - aiming
     - aiming2
+    - backbutton
     - character1
     - character2
+    - rulebutton
+    - startbutton
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.Physics2DRaycaster
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/DogAndCat.unity:
     - Class: 1
@@ -43,33 +66,69 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 12412}
+      Script: {instanceID: 11152}
     - Class: 114
-      Script: {instanceID: 17246}
+      Script: {instanceID: 11310}
     - Class: 114
-      Script: {instanceID: 19082}
+      Script: {instanceID: 11352}
     - Class: 114
-      Script: {instanceID: 39978}
+      Script: {instanceID: 11362}
     - Class: 114
-      Script: {instanceID: 39980}
+      Script: {instanceID: 11364}
     - Class: 114
-      Script: {instanceID: 41040}
+      Script: {instanceID: 11796}
     - Class: 114
-      Script: {instanceID: 41044}
+      Script: {instanceID: 11950}
     - Class: 114
-      Script: {instanceID: 141878}
+      Script: {instanceID: 12060}
+    - Class: 114
+      Script: {instanceID: 12130}
+    - Class: 114
+      Script: {instanceID: 12398}
+    - Class: 114
+      Script: {instanceID: 12442}
+    - Class: 114
+      Script: {instanceID: 12450}
+    - Class: 114
+      Script: {instanceID: 12470}
+    - Class: 114
+      Script: {instanceID: 12618}
+    - Class: 114
+      Script: {instanceID: 12862}
+    - Class: 114
+      Script: {instanceID: 35608}
+    - Class: 114
+      Script: {instanceID: 35610}
+    - Class: 114
+      Script: {instanceID: 35612}
+    - Class: 114
+      Script: {instanceID: 35614}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -81,7 +140,133 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 199
       Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     - Class: 258
+      Script: {instanceID: 0}
+    Assets/Scenes/Rule_Scene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11152}
+    - Class: 114
+      Script: {instanceID: 11352}
+    - Class: 114
+      Script: {instanceID: 11742}
+    - Class: 114
+      Script: {instanceID: 12080}
+    - Class: 114
+      Script: {instanceID: 12618}
+    - Class: 114
+      Script: {instanceID: 12968}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Start_Scene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11152}
+    - Class: 114
+      Script: {instanceID: 11352}
+    - Class: 114
+      Script: {instanceID: 11468}
+    - Class: 114
+      Script: {instanceID: 11742}
+    - Class: 114
+      Script: {instanceID: 11860}
+    - Class: 114
+      Script: {instanceID: 12152}
+    - Class: 114
+      Script: {instanceID: 12372}
+    - Class: 114
+      Script: {instanceID: 12618}
+    - Class: 114
+      Script: {instanceID: 12968}
+    - Class: 114
+      Script: {instanceID: 287480}
+    - Class: 114
+      Script: {instanceID: 531028}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -128,6 +313,12 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
+      Hash: 0ff4547fb097f640004c63315e051535
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShakeByDistance
+  - hash:
+      serializedVersion: 2
       Hash: 72712369a7c681ad84fc255a5ec0b333
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -138,6 +329,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: 1c16d99756cc8a8e8c88ef29241dfc43
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShakeOnKeyPress
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -156,6 +353,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 826d0faa7e2f2ff9c4a8361922361b32
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: aiming
+  - hash:
+      serializedVersion: 2
+      Hash: 13f8f373b951cbaf0f891949929b196a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Car
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -186,6 +395,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: startbutton
   - hash:
       serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
@@ -272,6 +487,18 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: fd375ea2795fedb6a67c0cb421b915fd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: aiming2
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: rulebutton
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -282,6 +509,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: a7479c448d96b84f4a09de98e1b55cca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -297,9 +530,27 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShakeOnTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: 70d5ae9cf7f83bdbcc75880044866e84
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FishEyeEffect
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: backbutton
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -324,6 +575,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShakeDemo
   - hash:
       serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
@@ -368,16 +625,34 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 7e406df0e6f8b80d28f49a2599672de1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: character2
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: e5d5b880e545048bdb06a06924a83fd8
+      Hash: af41c41db12c4329d2f3e2b5f0ea001e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Ball
+  - hash:
+      serializedVersion: 2
+      Hash: 527ae114cbde7f7df2d00c0d7f133442
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Shake
+  - hash:
+      serializedVersion: 2
+      Hash: d86e2f933d0937148eb5601802ebfcff
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EZCameraShake
+    className: CameraShaker
   - hash:
       serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
@@ -414,6 +689,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 7e406df0e6f8b80d28f49a2599672de1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: character1
   - hash:
       serializedVersion: 2
       Hash: df434544c9f7b33d1cc7e635b180d279
@@ -512,83 +793,49 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 0ff4547fb097f640004c63315e051535
+      Hash: 370a480370be6e5c31baf7d443a493ac
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ShakeByDistance
+    className: PauseOnCanvas
   - hash:
       serializedVersion: 2
-      Hash: 1c16d99756cc8a8e8c88ef29241dfc43
+      Hash: b7f1efc02fd28e4cd9e2935585938ee3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ShakeOnKeyPress
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShakeOnTrigger
+    className: InstantiateCanvasOnClick
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ShakeDemo
+    className: BackToTitleButton
   - hash:
       serializedVersion: 2
-      Hash: d86e2f933d0937148eb5601802ebfcff
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: EZCameraShake
-    className: CameraShaker
-  - hash:
-      serializedVersion: 2
-      Hash: 527ae114cbde7f7df2d00c0d7f133442
+      Hash: d0adc65b6f54d204e5a5dc174eb9a803
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Shake
+    className: ContinueButton
   - hash:
       serializedVersion: 2
-      Hash: 6cf0958942a145e37e9edced6fe85835
+      Hash: e3168249f8c0246f5cb0548d02e1c8c7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: character2
-  - hash:
-      serializedVersion: 2
-      Hash: 6cf0958942a145e37e9edced6fe85835
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: character1
-  - hash:
-      serializedVersion: 2
-      Hash: fa6c4855f66873a004980ec86474ce01
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: aiming
-  - hash:
-      serializedVersion: 2
-      Hash: fa6c4855f66873a004980ec86474ce01
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: aiming2
+    className: BeginBall
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: GameManager
+    className: ExitButton
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Car
-  - hash:
-      serializedVersion: 2
-      Hash: 70d5ae9cf7f83bdbcc75880044866e84
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FishEyeEffect
+    className: Reload
   platform: 5
   scenePathNames:
+  - Assets/Scenes/Start_Scene.unity
+  - Assets/Scenes/Rule_Scene.unity
   - Assets/Scenes/DogAndCat.unity
-  playerPath: D:/GitHub/ToydeaGameJam/DogAndCat/Build/DogAndCat.exe
+  playerPath: D:/GitHub/ToydeaGameJam/DogAndCat/Build/CatAndDog.exe

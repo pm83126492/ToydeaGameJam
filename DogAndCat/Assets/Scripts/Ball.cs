@@ -1,16 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Ball : MonoBehaviour
 {
     public LayerMask collisonMask;
     public LayerMask playerMask;
+    public LayerMask PotMask;
+    public LayerMask UpMask;
     public Transform blade;
-    public float Speed = 15;
+    public float Speed=50;
     public ParticleSystem particle;
-    public GameObject ExploseEffect;
+    public GameObject DogExploseEffect;
+    public GameObject CatExploseEffect;
     public bool CanAttack;
 
     private void Start()
@@ -33,29 +35,43 @@ public class Ball : MonoBehaviour
             transform.eulerAngles = new Vector3(0, rot, 0);
         }
 
-        if (Physics.Raycast(ray, out hit, Time.deltaTime * Speed + 1f, playerMask)&&CanAttack)
+        if (Physics.Raycast(ray, out hit, Time.deltaTime * Speed + 1f, playerMask)&&CanAttack && !GameManager.IsDie)
         {
-            if (hit.collider.name == "cat")
-            {
-
-            }
-            Instantiate(ExploseEffect, transform.position, transform.rotation);
+            GameManager.IsDie = true;
             Destroy(hit.collider.gameObject);
-            StartCoroutine(Restart());
+            if (hit.collider.gameObject.tag == "Cat")
+            {
+                Instantiate(CatExploseEffect, transform.position, transform.rotation);
+                aiming2.DogDieNumber += 1;
+            }
+            else if (hit.collider.gameObject.tag == "Dog")
+            {
+                Instantiate(DogExploseEffect, transform.position, transform.rotation);
+                aiming.CatDieNumber += 1;
+            }
         }
-        
+
+       /* if (Physics.Raycast(ray, out hit, Time.deltaTime * Speed + 1f, PotMask))
+        {
+            Vector3 reflectDir = Vector3.Reflect(ray.direction, hit.normal);
+            float rot = 90 - Mathf.Atan2(reflectDir.z, reflectDir.x) * Mathf.Rad2Deg;
+            transform.eulerAngles = new Vector3(0, rot, 0);
+            Speed = 20f;
+        }
+        if (Physics.Raycast(ray, out hit, Time.deltaTime * Speed + 1f, UpMask))
+        {
+            Vector3 reflectDir = Vector3.Reflect(ray.direction, hit.normal);
+            float rot = 90 - Mathf.Atan2(reflectDir.z, reflectDir.x) * Mathf.Rad2Deg;
+            transform.eulerAngles = new Vector3(0, rot, 0);
+            Speed = 60f;
+        }*/
     }
 
     IEnumerator StopVFX()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
+        Speed = 20f;
         CanAttack = false;
         particle.Stop();
-    }
-
-    IEnumerator Restart()
-    {
-        yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene("DogAndCat");
     }
 }
